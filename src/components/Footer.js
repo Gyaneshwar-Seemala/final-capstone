@@ -5,20 +5,20 @@ export default function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4">
-            <img src="Asset 18@4x.png" alt="Logo" className="img-fluid" height={70} width={100}/>
+          <div className="col-lg-4 d-flex justify-content-center align-items-center">
+            <img src="Asset 18@4x.png" alt="Logo" className="img-fluid" />
           </div>
           <div className="col-lg-4">
             <h5>Follow Us on</h5>
             <ul className="social-media-links" style={{ listStyle: 'none' }}>
               <li>
-                <a href="instagram.com" style={{ fontWeight: 'bold', color:'black' }}> Instagram-@LittleLemon</a>
+                <a href="instagram.com" style={{ fontWeight: 'bold', color: 'black' }}> Instagram-@LittleLemon</a>
               </li>
               <li>
-              <a href="facebook.com" style={{ fontWeight: 'bold', color: 'black' }}>Facebook-@LittleLemon</a>
+                <a href="facebook.com" style={{ fontWeight: 'bold', color: 'black' }}>Facebook-@LittleLemon</a>
               </li>
               <li>
-              <a href="youtube.com" style={{ fontWeight: 'bold', color: 'black'}}>Youtube-@LittleLemon</a>
+                <a href="youtube.com" style={{ fontWeight: 'bold', color: 'black' }}>Youtube-@LittleLemon</a>
               </li>
             </ul>
           </div>

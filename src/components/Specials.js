@@ -27,11 +27,12 @@ export default function Specials(props) {
               alignItems: 'center',
               justifyContent: 'center',
               textAlign: 'center',
-              marginTop:20
+              marginTop:20,
+              marginBottom:10
             }}
           >
-            <h4>
-              Order Now.....<img alt="delivery icon" src="https://w7.pngwing.com/pngs/702/495/png-transparent-doorstep-delivery-computer-icons-others-miscellaneous-silhouette-area.png" width={40} height={40} />
+             <h4>
+              Order Now......<b>➡</b>
             </h4>
           </Link>
         </div>

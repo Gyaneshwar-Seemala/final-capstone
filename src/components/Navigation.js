@@ -10,8 +10,8 @@ export default function Navigation() {
             src="Asset 16@4x.png"
             alt="Little lemon"
             className="img-fluid"
-            height={50}
-            width={240}
+            height={100}
+            width={300}
           />
         </NavLink>
         <button

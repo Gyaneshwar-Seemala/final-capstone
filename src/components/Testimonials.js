@@ -6,7 +6,7 @@ export default function Testimonials(props) {
     <>
     <div className='test'>
         <div className="image">
-            <img src={props.profile} alt='Customer profile' className='img-fluid' width={150} height={200}/>
+            <img src={props.profile} alt='Customer profile' className='img-fluid' />
         </div>
         <div className="review">
             <p>{props.review}</p>

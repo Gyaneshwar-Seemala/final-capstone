@@ -46,6 +46,39 @@ button{
     font-size: 20px;
     font-weight: 700;
 }
+
+button:hover{
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-in;
+}
+.about{
+    display: grid;
+    grid-template-columns: 5% 40% 50%;
+    grid-template-rows: 400px;
+    grid-template-areas: "empty1" "titles2" "image2" "empty2";
+}
+#titles2 >h2{
+  color:#495E57;
+  font-family: "Markazi Text";
+  font-weight: 500;
+  font-size: 64px;
+  margin-top: 10px;
+}
+#titles2 >h4{
+  color: black;
+  font-family: "karla";
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: -10px;
+}
+#titles2 >p{
+  color: black;
+  font-family: karla;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+}
 /* Home.css */
 #image> img{
     position: relative;
@@ -55,8 +88,17 @@ button{
     border-radius: 20px;
     margin-left: 80px;
 }
+#image2> img{
+  position: relative;
+  width: 500px;
+  border-radius: 20px;
+  align-items: center;
+}
 #titles{
     margin-left: 80px;
+}
+#titles2{
+  margin-left: 200px;
 }
 .specials{
     display: grid;
@@ -112,19 +154,29 @@ button{
     font-size: 30px;
     font-weight: 500;
 }
-h2{
+#testi{
     text-align: center;
     font-family: "Markazi text";
     font-size: 50px;
     font-weight: 700;
-    margin: 30px;
+    margin-bottom: 30px;
 }
-.testimonials{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "test1" "test2"
-                            "test3" "test4";
-    grid-gap: 50px;
-    background-color: #495E57;
+.testimonials {
+  display: grid;
+  grid-template-columns: 650px 650px;
+  grid-template-rows: 210px 210px;
+  grid-template-areas:
+    "test1"
+    "test2"
+    "test3"
+    "test4";
+  grid-gap: 70px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.testimonials > * {
+  background-color: #EDEFEE;
+  padding: 20px;
 }
