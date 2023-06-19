@@ -1,10 +1,11 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <a className="navbar-brand" href="index.html">
+        <NavLink className="navbar-brand" to="/">
           <img
             src="Asset 16@4x.png"
             alt="Little lemon"
@@ -12,7 +13,7 @@ export default function Navigation() {
             height={50}
             width={240}
           />
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,34 +28,58 @@ export default function Navigation() {
         <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="index.html" style={{ fontWeight: 800 }}>
+              <NavLink
+                className="nav-link"
+                to="/"
+                style={{ fontWeight: 800 }}
+              >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="About.html" style={{ fontWeight: 800 }}>
+              <NavLink
+                className="nav-link"
+                to="/About"
+                style={{ fontWeight: 800 }}
+              >
                 About
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="Menu.html" style={{ fontWeight: 800 }}>
+              <NavLink
+                className="nav-link"
+                to="/Menu"
+                style={{ fontWeight: 800 }}
+              >
                 Menu
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="Reserve.html" style={{ fontWeight: 800 }}>
+              <NavLink
+                className="nav-link"
+                to="/Reservation"
+                style={{ fontWeight: 800 }}
+              >
                 Reservation
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="Order.html" style={{ fontWeight: 800 }}>
+              <NavLink
+                className="nav-link"
+                to="/order-online"
+                style={{ fontWeight: 800 }}
+              >
                 Order online
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="Login.html" style={{ fontWeight: 800 }}>
+              <NavLink
+                className="nav-link"
+                to="/Login"
+                style={{ fontWeight: 800 }}
+              >
                 Login
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
