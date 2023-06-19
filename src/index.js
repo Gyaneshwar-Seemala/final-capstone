@@ -10,10 +10,12 @@ import Reservation from './pages/Reservation';
 import OrderOnline from './pages/OrderOnline';
 import Login from './pages/Login';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -24,6 +26,7 @@ ReactDOM.render(
         {/* Add other routes here */}
         {/* Make sure to specify the correct component for each route */}
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

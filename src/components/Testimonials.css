@@ -1,0 +1,9 @@
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+img{
+    margin-left: 20px;
+}
