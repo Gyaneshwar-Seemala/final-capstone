@@ -27,12 +27,12 @@ export default function Specials(props) {
               alignItems: 'center',
               justifyContent: 'center',
               textAlign: 'center',
-              marginTop:20,
-              marginBottom:10
+              marginTop: 20,
+              marginBottom: 10
             }}
           >
-             <h4>
-              Order Now......<b>➡</b>
+            <h4>
+              <span className="hover-text">Order Now......➡</span>
             </h4>
           </Link>
         </div>

@@ -109,6 +109,7 @@ button:hover{
     align-items: center;
     text-align: center;
     margin-top: 50px;
+    
 }
 .specials> button{
     font-weight: 700;
@@ -129,12 +130,17 @@ button:hover{
     grid-template-rows: auto;
     grid-gap: 50px;
     grid-template-areas: "special1" "special2" "special3";
+    
+}
+#inspec{
+  border: 3px solid #495E57;
 }
 #inspec> .row{
     background-color: #EDEFEE;
     align-items: center;
     justify-content: center;
     text-align: left;
+    
 }
 #inspec> .row >img{
     width: 420px;
@@ -159,7 +165,7 @@ button:hover{
     font-family: "Markazi text";
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .testimonials {
   display: grid;
@@ -170,7 +176,7 @@ button:hover{
     "test2"
     "test3"
     "test4";
-  grid-gap: 70px;
+  grid-gap: 90px;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -179,4 +185,13 @@ button:hover{
 .testimonials > * {
   background-color: #EDEFEE;
   padding: 20px;
+  border: 3px solid #495E57;
+}
+.hover-text {
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.hover-text:hover {
+  color: red; /* Change the color to your desired hover color */
 }

@@ -1,10 +1,9 @@
 .test{
     display: grid;
     grid-template-columns: 190px 440px;
-    grid-template-rows: 210px;
+    grid-template-rows: 240px;
     grid-template-areas: "image" "review";
     text-align: center;
-    text-overflow: ellipsis;
     grid-gap: 5px;
     justify-content: space-evenly;
     align-items: center;

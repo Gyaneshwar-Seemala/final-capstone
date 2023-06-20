@@ -11,6 +11,7 @@ import OrderOnline from './pages/OrderOnline';
 import Login from './pages/Login';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import Signup from './pages/Signup';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.render(
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/order-online" element={<OrderOnline />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup/>} />
         {/* Add other routes here */}
         {/* Make sure to specify the correct component for each route */}
       </Routes>
