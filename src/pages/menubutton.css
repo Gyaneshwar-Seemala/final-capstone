@@ -10,7 +10,7 @@
     font: karla;
     font-size: 15px;
 }
-#soups , #appetizers{
+#soups , #appetizers, #main-course, #desserts{
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: auto ;
@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
 }
-h2{
+#menus{
     justify-content: center;
     align-items: center;
     text-align: center;

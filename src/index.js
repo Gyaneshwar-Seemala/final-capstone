@@ -12,6 +12,8 @@ import Login from './pages/Login';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Signup from './pages/Signup';
+import Checkout from './components/checkout';
+import Ontheway from './components/Ontheway';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -25,6 +27,8 @@ ReactDOM.render(
         <Route path="/order-online" element={<OrderOnline />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup/>} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/Ontheway" element={<Ontheway/>} />
         {/* Add other routes here */}
         {/* Make sure to specify the correct component for each route */}
       </Routes>

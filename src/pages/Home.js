@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import Specials from "../components/Specials";
@@ -7,8 +7,39 @@ import testimonialsData from "../components/Testimony";
 import specialsData from "../components/Specialsdata";
 
 function Home() {
+  useEffect(() => {
+    const myButton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    const scrollFunction = () => {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        myButton.style.display = "block";
+      } else {
+        myButton.style.display = "none";
+      }
+    };
+
+    window.addEventListener("scroll", scrollFunction);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", scrollFunction);
+    };
+  }, []);
+
+  // When the user clicks on the button, scroll to the top of the document
+  const topFunction = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
   return (
     <>
+      <button onClick={topFunction} id="myBtn" title="Go to top">
+        ⬆
+      </button>
       <div className="main">
         <main>
           <div className="container">
