@@ -92,7 +92,7 @@ export default function Login() {
               fontSize: "15px",
               margin: "30px",
               justifyContent: "center",
-              backgroundColor: "#495e57",
+              backgroundColor: "black",
               color: "white",
             }}
           >
@@ -112,6 +112,7 @@ export default function Login() {
                   fontSize: "15px",
                   margin: "30px",
                   justifyContent: "center",
+                  backgroundColor:"black"
                 }}
               >
                 Sign Up
